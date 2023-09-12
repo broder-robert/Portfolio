@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,700&family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f5f5f5;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: #6F8FAF;
+    /* background-image: url(bg.webp); */
+    color: #fff;
+    padding: 20px 0;
+}
+
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.portfolio-utbildning,
+.portfolio-info,
+.portfolio-ambition,
+.portfolio-projekt {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 48%;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.fot {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.fot a {
+    color: black;
+}
+
+
+.fot-img {
+    padding: 4px;
+    height: 30px;
+    object-fit: cover;
+}
+
+/* Glow effekt vid mouse-over på alla articles, saxat från chatgtp */
+.portfolio-utbildning,
+.portfolio-info,
+.portfolio-ambition,
+.portfolio-projekt {
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+
+.portfolio-utbildning:hover,
+.portfolio-info:hover,
+.portfolio-ambition:hover,
+.portfolio-projekt:hover {
+    box-shadow: 0 0 20px rgba(111, 143, 175, 1);
+}
